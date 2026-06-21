@@ -1,0 +1,15 @@
+Abstract: A Minimalist, Schema-Driven Paradigm for GUI Development via Macro-Mediated Semantic Synthesis
+Modern Graphical User Interface (GUI) development in systems programming frequently suffers from a "boilerplate tax," where the orchestration of component registration, data-binding, and visual styling outweighs the actual application logic. This paper introduces Bonnenui, a novel, macro-driven architecture for Rust that treats function signatures as the singular source of truth for UI generation. By leveraging procedural macros to interpret function signatures as declarative GUI schemas, Bonnenui achieves "semantic synchronization" between backend logic and frontend presentation, effectively eliminating the risk of drift between the data model and the user interface.
+
+We propose a "Search-Box Paradigm" of interface design, where the interface is a minimalist, type-safe projection of the function's requirements. Our system automates UI construction by synthesizing labels and visual aesthetics directly from argument identifiers and type-directed semantic tagging (e.g., using suffixes like _red for thematic encoding). This approach replaces manual, error-prone registry patterns with compile-time semantic verification, moving the GUI-logic synchronization problem from a runtime debugging burden to a compile-time compiler error. By unifying logic and presentation, Bonnenui reduces the architectural "touchpoints" of GUI development, demonstrating that powerful, reactive interfaces can be achieved through minimalist, compiler-mediated projection rather than traditional imperative construction.
+
+Key Pillars Included:
+Schema-Driven: Functions define the UI, not the other way around.
+
+Semantic Synchronization: Eliminating the "Dual-Source-of-Truth" problem.
+
+The "Search-Box" Philosophy: Distilling UI down to its functional essence (minimalism).
+
+In-Band Metadata: Using variable names (e.g., wages_red) to convey both labeling and aesthetic intent.
+
+Compile-Time Verification: Moving UI-consistency errors to the build stage.
