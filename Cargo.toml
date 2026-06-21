@@ -1,0 +1,13 @@
+[package]
+name = "cmd_pal"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = "0.29"
+dyn-clone = "1.0"
+ui_macro = { path = "./ui_macro" }
+common = { path = "./common" }
+
+[workspace]
+members = ["ui_macro", "common"]
